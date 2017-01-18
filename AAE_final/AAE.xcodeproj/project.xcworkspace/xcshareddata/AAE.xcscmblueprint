@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FBE6022BAAFCF2B5386959A93515E0B929C9E3CE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "942298B9B4489A8B164BFD5A00D7D82DEB83C7F2" : 9223372036854775807,
+    "FBE6022BAAFCF2B5386959A93515E0B929C9E3CE" : 9223372036854775807,
+    "253940EFFD57AA0C844632FA47CFF566158B5D5C" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "26B8859B-73A6-4FCA-A99E-0E05BDA097EA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "942298B9B4489A8B164BFD5A00D7D82DEB83C7F2" : "PilotPlantCatalog\/",
+    "FBE6022BAAFCF2B5386959A93515E0B929C9E3CE" : "Coffee-in-Seoul\/",
+    "253940EFFD57AA0C844632FA47CFF566158B5D5C" : "..\/PilotPlant"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AAE",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "2_AAE 복사본\/AAE.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lingostar\/PilotPlant.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "253940EFFD57AA0C844632FA47CFF566158B5D5C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CodersHigh\/PilotPlantCatalog.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "942298B9B4489A8B164BFD5A00D7D82DEB83C7F2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/GeekInTheClass\/Coffee-in-Seoul.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FBE6022BAAFCF2B5386959A93515E0B929C9E3CE"
+    }
+  ]
+}
