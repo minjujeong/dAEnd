@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nlM-I2-NMd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nlM-I2-NMd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -54,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X0d-XV-KuQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8329" y="-1404"/>
+            <point key="canvasLocation" x="7081" y="2182"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="OeC-oa-6bo">
@@ -268,7 +268,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F1U-3w-32s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9776.7999999999993" y="-617.54122938530736"/>
+            <point key="canvasLocation" x="11908" y="-591"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jfw-oP-gMS">
@@ -311,79 +311,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jsv-Ao-bGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7617" y="-1368"/>
-        </scene>
-        <!--사진 앨범-->
-        <scene sceneID="5E4-CN-mbq">
-            <objects>
-                <viewController id="HfS-qS-lcO" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="osx-1k-6xi"/>
-                        <viewControllerLayoutGuide type="bottom" id="4PE-xb-9ms"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vbP-JP-YPn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="스크린샷 2017-01-06 오후 1.59.30" translatesAutoresizingMaskIntoConstraints="NO" id="1o9-cg-BXQ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="P20170112_124742000_D86DF809-99C7-41D3-A225-A879B5934F77" translatesAutoresizingMaskIntoConstraints="NO" id="p37-xV-MUc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fy-dh-qfM">
-                                <rect key="frame" x="214" y="72" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="SkT-AE-wT9" kind="show" animates="NO" id="HaV-Ei-tbw"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="사진 앨범" id="UGs-h5-lWt">
-                        <barButtonItem key="rightBarButtonItem" title="변환" id="TRu-zN-r0y"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f29-Ap-edI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="9825" y="1035"/>
-        </scene>
-        <!--사진 앨범-->
-        <scene sceneID="xFb-b5-isC">
-            <objects>
-                <viewController id="SkT-AE-wT9" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZW0-ew-s3K"/>
-                        <viewControllerLayoutGuide type="bottom" id="ctS-Oe-Ctm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="21f-bD-VVV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="P20170112_140257000_C0D98E4C-E600-4705-99F6-DA2CE30983F2" translatesAutoresizingMaskIntoConstraints="NO" id="bmh-7w-lkt">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVQ-fh-Jcb">
-                                <rect key="frame" x="210" y="448" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="H5v-1h-jN0" kind="show" animates="NO" id="MHg-Uc-42j"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="사진 앨범" id="64D-2x-M1W">
-                        <barButtonItem key="rightBarButtonItem" title="변환" id="aJS-gQ-ZFf"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qax-nK-Hib" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="10585" y="1035"/>
+            <point key="canvasLocation" x="6369" y="2218"/>
         </scene>
         <!--변환된 사진-->
         <scene sceneID="E7B-9F-FFQ">
@@ -566,7 +494,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jbR-Dm-Zq6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10881" y="-540"/>
+            <point key="canvasLocation" x="11908" y="124"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="H90-hD-aAI">
@@ -597,7 +525,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAB-Rd-Hxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11643" y="-692"/>
+            <point key="canvasLocation" x="8133" y="2703"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Lwb-xN-opT">
@@ -628,38 +556,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yNd-QY-2Kv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12289" y="-1216"/>
-        </scene>
-        <!--사진 앨범-->
-        <scene sceneID="WiG-vN-ZvE">
-            <objects>
-                <viewController id="H5v-1h-jN0" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="16n-0o-ur1"/>
-                        <viewControllerLayoutGuide type="bottom" id="4Cq-ef-Pqf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="suE-v6-YLM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="P20170112_124806000_4AF49249-CB49-4DF1-88CD-918CE18FF9F1" translatesAutoresizingMaskIntoConstraints="NO" id="MOH-hE-hjx">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="사진 앨범" id="r8C-4o-DXT">
-                        <barButtonItem key="rightBarButtonItem" title="변환" id="5DE-D9-RwR">
-                            <connections>
-                                <segue destination="2xd-wR-KIf" kind="show" id="ant-cG-0mJ"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="I7B-sH-1hP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="11281" y="1035"/>
+            <point key="canvasLocation" x="8780" y="2179"/>
         </scene>
         <!--변환된 사진-->
         <scene sceneID="JA7-TW-SPF">
@@ -695,129 +592,6 @@
             </objects>
             <point key="canvasLocation" x="9559" y="122"/>
         </scene>
-        <!--변환된 사진-->
-        <scene sceneID="YZl-0s-znF">
-            <objects>
-                <viewController id="2xd-wR-KIf" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FId-Ym-ynu"/>
-                        <viewControllerLayoutGuide type="bottom" id="VMt-JT-eMG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3Tq-7K-SYq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="스크린샷 2017-01-06 오후 2.00.27" translatesAutoresizingMaskIntoConstraints="NO" id="dys-6g-XwW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="P20170112_125454000_734555D5-7F12-4CBC-867E-716FDDEC73C5" translatesAutoresizingMaskIntoConstraints="NO" id="iY8-sk-2Ky">
-                                <rect key="frame" x="0.0" y="5" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQA-4Q-0lf">
-                                <rect key="frame" x="209" y="72" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="8ZI-XJ-d3Z" kind="show" animates="NO" id="zr2-Ej-bLT"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="변환된 사진" id="8wt-gZ-JMc">
-                        <barButtonItem key="rightBarButtonItem" title="저장" id="ET0-Ql-mfV"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ges-5u-LOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="12020" y="1035"/>
-        </scene>
-        <!--변환된 사진-->
-        <scene sceneID="ZC4-rV-CRr">
-            <objects>
-                <viewController id="8ZI-XJ-d3Z" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lp4-Et-3qk"/>
-                        <viewControllerLayoutGuide type="bottom" id="RSC-7y-d4A"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uuK-lx-Md5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="P20170112_140307000_6D6C84EF-F0FA-45AA-8B0A-6EF0BEEA88B2" translatesAutoresizingMaskIntoConstraints="NO" id="VeT-Ks-vV0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Z1-KU-vvh">
-                                <rect key="frame" x="337" y="72" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="X94-eV-T6H" kind="show" animates="NO" id="afE-cb-TcJ"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="변환된 사진" id="bPr-Up-lT9">
-                        <barButtonItem key="rightBarButtonItem" title="저장" id="sNP-vA-rA8"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="soh-34-Tdt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="12772" y="1035"/>
-        </scene>
-        <!--변환된 사진-->
-        <scene sceneID="tmU-dz-5Yj">
-            <objects>
-                <viewController id="X94-eV-T6H" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="iI2-jO-pyP"/>
-                        <viewControllerLayoutGuide type="bottom" id="v8I-fm-Ul8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XeU-We-1id">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="P20170112_125500000_30891835-4C4D-486F-B386-DF8B5CA335D9" translatesAutoresizingMaskIntoConstraints="NO" id="BFE-JH-pZK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="변환된 사진" id="DDD-Wd-vCa">
-                        <barButtonItem key="rightBarButtonItem" title="저장" id="fma-Kg-gxW"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dOX-yC-LB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="13500" y="1035"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="iFE-aK-lSf">
-            <objects>
-                <viewController id="OgZ-dn-S37" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="OnK-CX-nXn"/>
-                        <viewControllerLayoutGuide type="bottom" id="grx-bL-aM8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Hhq-vH-bKD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="P20170112_125500000_30891835-4C4D-486F-B386-DF8B5CA335D9" translatesAutoresizingMaskIntoConstraints="NO" id="zLn-Ek-FOu">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7sT-TV-IqW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="14295" y="1035"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="ZHv-hK-le8">
             <objects>
@@ -847,7 +621,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G4Q-Gh-0eW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11644" y="-1215"/>
+            <point key="canvasLocation" x="8135" y="2180"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="zYV-16-LFc">
@@ -945,7 +719,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Je-jH-dT3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8853" y="-443"/>
+            <point key="canvasLocation" x="7605" y="3143"/>
         </scene>
         <!--사진 앨범-->
         <scene sceneID="at2-pm-dDl">
@@ -1039,7 +813,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10g-bS-WJ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7388" y="-1405"/>
+            <point key="canvasLocation" x="6140" y="2181"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="K2t-rj-s5a">
@@ -1127,7 +901,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ef8-nR-z0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6500" y="-1406"/>
+            <point key="canvasLocation" x="5252" y="2180"/>
         </scene>
     </scenes>
     <resources>
