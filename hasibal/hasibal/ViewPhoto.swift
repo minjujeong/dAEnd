@@ -14,6 +14,8 @@ class ViewPhoto: UIViewController {
     var assetCollection : PHAssetCollection!
     var photosAsset : PHFetchResult<PHAsset>!
     var index : Int = 0
+    var imageBoo : UIImage!
+    
 
     
     @IBOutlet weak var bigPhoto: UIImageView!
@@ -23,7 +25,7 @@ class ViewPhoto: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        bigPhoto.image = imageBoo
         // Do any additional setup after loading the view.
     }
 

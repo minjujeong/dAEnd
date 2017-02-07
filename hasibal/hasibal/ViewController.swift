@@ -10,7 +10,7 @@ import UIKit
 import Photos
 
 let albumName = "My App2"
-class ViewController: UICollectionViewController {
+class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout{
  
     
     var imageArray = [UIImage]()
@@ -20,9 +20,9 @@ class ViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        grabPhotos()
         self.collectionView?.allowsMultipleSelection = true
+        grabPhotos()
+
     }
     
     func grabPhotos(){
@@ -51,7 +51,7 @@ class ViewController: UICollectionViewController {
                     
                     imgManager.requestImage(for: fetchResult.object(at: i) as! PHAsset, targetSize: CGSize(width: 200, height: 200), contentMode: .aspectFill, options: requestOptions, resultHandler: {image, Error in
                     self.imageArray.append(image!)
-                    print("fgfg")
+                    print("Succeesssss")
                     })
                     
                 }
@@ -88,7 +88,7 @@ class ViewController: UICollectionViewController {
         }
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
             
-            let width = collectionView.frame.width / 3 - 1
+            let width = collectionView.frame.width / 5 - 1
             
             return CGSize(width: width , height: width)
             }
@@ -105,10 +105,10 @@ class ViewController: UICollectionViewController {
             
             let controller : ViewPhoto = segue.destination as! ViewPhoto
             let indexpath = self.collectionView?.indexPath(for: sender as! UICollectionViewCell)
-//            controller.index = indexPath!.item
-//            controller.photosAsset = self.photosAsset
+            controller.index = indexpath!.item
+//            controller.photosAsset = self.
 //            controller.assetCollection = self.assetCollection
-            
+            controller.imageBoo = imageArray[controller.index]
         }
     }
 
