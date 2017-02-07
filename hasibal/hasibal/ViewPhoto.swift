@@ -17,6 +17,8 @@ class ViewPhoto: UIViewController {
     var imageBoo : UIImage!
     
     @IBAction func cancel(_ sender: Any) {
+        
+        
     }
 
     @IBAction func share(_ sender: Any) {

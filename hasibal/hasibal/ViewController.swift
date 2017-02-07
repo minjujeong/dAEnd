@@ -34,16 +34,16 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         requestOptions.deliveryMode = .highQualityFormat
         
     
-        let assetCollectionRO = PHFetchOptions()
-        assetCollectionRO.predicate = NSPredicate(format: "title = %@", albumName)
-        
-        let assetcollection : PHFetchResult<PHAssetCollection> = PHAssetCollection.fetchAssetCollections(with: .album, subtype: .albumRegular, options: assetCollectionRO)
-        print("\(assetcollection.count)")
+//        let assetCollectionRO = PHFetchOptions()
+//        assetCollectionRO.predicate = NSPredicate(format: "title = %@", albumName)
+//        
+//        let assetcollection : PHFetchResult<PHAssetCollection> = PHAssetCollection.fetchAssetCollections(with: .album, subtype: .albumRegular, options: assetCollectionRO)
+//        print("\(assetcollection.count)")
 
-        if let firstOB = assetcollection.firstObject{
+        
         let fetchOptions = PHFetchOptions()
         fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
-            if let fetchResult :PHFetchResult = PHAsset.fetchAssets(in: firstOB, options: fetchOptions) {
+        if let fetchResult :PHFetchResult = PHAsset.fetchAssets(with: .image , options: fetchOptions) {
         
             if fetchResult.countOfAssets(with: PHAssetMediaType.image) > 0 {
                 
@@ -67,7 +67,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
             
         }
     }
-    }
+    
         override func numberOfSections(in collectionView: UICollectionView) -> Int {
             return 1
         }
