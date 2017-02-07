@@ -9,7 +9,7 @@
 import UIKit
 import Photos
 
-let albumName = "나무"
+//let albumName = "나무"
 class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout{
  
     
