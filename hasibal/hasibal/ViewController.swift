@@ -9,7 +9,7 @@
 import UIKit
 import Photos
 
-let albumName = "My App2"
+let albumName = "나무"
 class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout{
  
     
@@ -40,10 +40,10 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         let assetcollection : PHFetchResult<PHAssetCollection> = PHAssetCollection.fetchAssetCollections(with: .album, subtype: .albumRegular, options: assetCollectionRO)
         print("\(assetcollection.count)")
 
-        
+        if let firstOB = assetcollection.firstObject{
         let fetchOptions = PHFetchOptions()
         fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
-        if let fetchResult :PHFetchResult = PHAsset.fetchAssets(with: .image , options: fetchOptions) {
+            if let fetchResult :PHFetchResult = PHAsset.fetchAssets(in: firstOB, options: fetchOptions) {
         
             if fetchResult.countOfAssets(with: PHAssetMediaType.image) > 0 {
                 
@@ -67,7 +67,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
             
         }
     }
-    
+    }
         override func numberOfSections(in collectionView: UICollectionView) -> Int {
             return 1
         }

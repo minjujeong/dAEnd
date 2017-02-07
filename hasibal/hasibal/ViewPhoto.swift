@@ -16,12 +16,17 @@ class ViewPhoto: UIViewController {
     var index : Int = 0
     var imageBoo : UIImage!
     
+    @IBAction func cancel(_ sender: Any) {
+    }
+
+    @IBAction func share(_ sender: Any) {
+    }
+    @IBAction func trash(_ sender: Any) {
+    }
 
     
     @IBOutlet weak var bigPhoto: UIImageView!
-    @IBOutlet weak var cancel: UIBarButtonItem!
-    @IBOutlet weak var share: UIBarButtonItem!
-    @IBOutlet weak var trash: UIBarButtonItem!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
