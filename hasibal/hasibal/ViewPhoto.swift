@@ -16,12 +16,10 @@ class ViewPhoto: UIViewController {
     var index : Int = 0
     var imageBoo : UIImage!
     
-    @IBAction func cancel(_ sender: Any) {
-        
-        
-    }
 
-    @IBAction func share(_ sender: Any) {
+    @IBOutlet weak var bigPhoto: UIImageView!
+
+    @IBAction func applyFilter(_ sender: Any) {
         guard let image = self.bigPhoto.image?.cgImage else { return }
         //이게 뭐냐면 가드렛안되면 그냥 브레이크하는것임
         // nil 이 아니면 다음 문단으로 넘어가라
@@ -47,21 +45,11 @@ class ViewPhoto: UIViewController {
          exposureFilter?.setValue(1, forKey: kCIInputEVKey) */
         
         if let output = filter?.value(forKey: kCIOutputImageKey) as? CIImage{
-            self.bigPhoto.image = UIImage(cgImage: context.createCGImage(output, from: output.extent)!)
+            self.bigPhoto?.image = UIImage(cgImage: context.createCGImage(output, from: output.extent)!)
         }
         
-        // kCIOutputImageKey 필터를 적용해라 - 그것을 ciimage로 타입 변환해라 - 그리고 다시 uiimage로 넣어줘라 : context에 우리의 아웃풋을 넣자 = 이것은 이미지뷰로 넣어질 것
         
-        
-    
-
-    
     }
-    @IBAction func trash(_ sender: Any) {
-    }
-
-    
-    @IBOutlet weak var bigPhoto: UIImageView!
 
     
     override func viewDidLoad() {

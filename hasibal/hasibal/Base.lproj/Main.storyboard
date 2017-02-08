@@ -84,26 +84,16 @@
                             <constraint firstItem="2QK-Mp-f8c" firstAttribute="top" secondItem="DaN-Td-Wix" secondAttribute="bottom" id="zIQ-JH-kxZ"/>
                         </constraints>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem systemItem="action" id="rqK-zy-P2J">
-                            <connections>
-                                <action selector="share:" destination="LSc-4U-CG7" id="9Ps-9r-8gq"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem width="300" style="plain" systemItem="fixedSpace" id="bTR-3I-0lq"/>
-                        <barButtonItem systemItem="trash" id="aGV-Rb-5VR">
-                            <connections>
-                                <action selector="trash:" destination="LSc-4U-CG7" id="SzR-pe-yIl"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Full-Size Image" id="fkS-wm-87Y">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="79I-gi-w6n"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="Ll7-DE-vwv">
+                            <connections>
+                                <action selector="applyFilter:" destination="LSc-4U-CG7" id="Qgf-uC-NbB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="bigPhoto" destination="DaN-Td-Wix" id="9RV-nR-Z7Y"/>
-                        <outlet property="cancel" destination="79I-gi-w6n" id="K23-L9-dP2"/>
-                        <outlet property="trash" destination="aGV-Rb-5VR" id="9Tl-uc-rIv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKx-zK-HO9" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -20,7 +20,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView?.allowsMultipleSelection = true
+//        self.collectionView?.allowsMultipleSelection = true
         grabPhotos()
 
     }
