@@ -9,15 +9,15 @@
 import UIKit
 import Photos
 
-//let albumName = "나무"
+let albumName = "딴드"
 class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout{
  
     
     var imageArray = [UIImage]()
     var imageArray2 = [UIImage]()
     var PHArray = [PHAsset]()
-    
-    
+    var albumFound : Bool = false
+    var assetCollection2 : PHAssetCollection!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +33,46 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         let requestOptions = PHImageRequestOptions()
         requestOptions.isSynchronous = true
         requestOptions.deliveryMode = .highQualityFormat
+   
+        let fetchOptions2 = PHFetchOptions()
+        fetchOptions2.predicate = NSPredicate(format: "title = %@", albumName)
+        let collection2 : PHFetchResult = PHAssetCollection.fetchAssetCollections(with: .album, subtype: .any, options: fetchOptions2)
+
+        if let first_Obj2:AnyObject = collection2.firstObject {
+            //found the album
+            self.albumFound = true
+            self.assetCollection2 = first_Obj2 as! PHAssetCollection
+
+        }else {
+            //create
+            var albumPlaceholder:PHObjectPlaceholder!
+
+            NSLog("\nFolder \"%@\" does not exist\n creating now..", albumName)
+            PHPhotoLibrary.shared().performChanges({
+                let request = PHAssetCollectionChangeRequest.creationRequestForAssetCollection(withTitle: albumName)
+                albumPlaceholder = request.placeholderForCreatedAssetCollection
+            },
+                completionHandler: {(success:Bool, error:Error?)in
+                if(success){
+                print("Successfully created folder")
+                self.albumFound = true
+                 let collection = PHAssetCollection.fetchAssetCollections(withLocalIdentifiers: [albumPlaceholder.localIdentifier], options: nil)
+                 self.assetCollection2 = collection.firstObject! as PHAssetCollection
+  //               self.photosAsset = PHAsset.fetchAssets(in: self.assetCollection2, options: nil)
+                    }else{
+                        print("Error creating folder")
+                            self.albumFound = false
+
+                                                    }
+            })
+
+
+    }
+
+  
         
-    
+     
+
 //        let assetCollectionRO = PHFetchOptions()
 //        assetCollectionRO.predicate = NSPredicate(format: "title = %@", albumName)
 //        
