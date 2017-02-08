@@ -143,13 +143,14 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier! as String == "viewLargePhoto" {
             
-            let controller : ViewPhoto = segue.destination as! ViewPhoto
+            let controller : scrollViewController = segue.destination as! scrollViewController
             let indexpath = self.collectionView?.indexPath(for: sender as! UICollectionViewCell)
             controller.index = indexpath!.item
             controller.assetto = PHArray[indexpath!.row]
+            controller.imageBoo2 = imageArray[controller.index]
 //            controller.photosAsset = self.
 //            controller.assetCollection = self.assetCollection
-            controller.imageBoo = imageArray[controller.index]
+
         }
     }
 
