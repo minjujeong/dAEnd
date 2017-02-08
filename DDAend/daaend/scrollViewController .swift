@@ -47,7 +47,7 @@ class scrollViewController : UIViewController {
         let yCoord: CGFloat = 5
         let buttonWidth:CGFloat = 70
         let buttonHeight: CGFloat = 70
-        let gapBetweenButtons: CGFloat = 5
+        let gapBetweenButtons: CGFloat = 3
         
         var itemCount = 0
         
@@ -59,7 +59,7 @@ class scrollViewController : UIViewController {
             filterButton.frame = CGRect(x: xCoord, y: yCoord, width: buttonWidth, height: buttonHeight)
             filterButton.tag = itemCount
             filterButton.addTarget(self, action: #selector(scrollViewController.filterButtonTapped(_:)), for: .touchUpInside)
-            filterButton.layer.cornerRadius = 6
+            filterButton.layer.cornerRadius = 4
             filterButton.clipsToBounds = true
             
             // CODE FOR FILTERS WILL BE ADDED HERE...
