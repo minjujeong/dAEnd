@@ -11,7 +11,7 @@ import Photos
 
 class scrollViewController : UIViewController {
 
-    var assetCollection : PHAssetCollection!
+    var assetCollection : PHAssetCollection! 
     var photosAsset : PHFetchResult<PHAsset>!
     var index : Int = 0
     var imageBoo2 : UIImage!
@@ -25,7 +25,38 @@ class scrollViewController : UIViewController {
     @IBOutlet weak var filterScrollView: UIScrollView!
     
     
-    var CIFilterNames = [
+ 
+    @IBAction func save(_ sender: UIBarButtonItem) {
+        let alertController = UIAlertController(title: NSLocalizedString("New Photo", comment: ""), message: nil, preferredStyle: .alert)
+        alertController.addTextField { textField in
+            textField.placeholder = NSLocalizedString("Photos Name", comment: "")
+        }
+        alertController.addAction(UIAlertAction(title: NSLocalizedString("Create", comment: ""), style: .default) { action in
+            let textField = alertController.textFields!.first!
+            if let title = textField.text, !title.isEmpty {
+                PHPhotoLibrary.shared().performChanges({
+                    let creationRequest = PHAssetChangeRequest.creationRequestForAsset(from: (self.imageToFilter?.image)!)
+                    if let assetCollection = self.assetCollection {
+                        let addAssetRequest = PHAssetCollectionChangeRequest(for: assetCollection)
+                        addAssetRequest?.addAssets([creationRequest.placeholderForCreatedAsset!] as NSArray)
+                    }
+                }, completionHandler: {success, error in
+                    if !success { print("error creating asset: \(error)") }
+                })
+            }
+        })
+        alertController.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: ""),
+                                                style: .cancel, handler: nil))
+        
+        self.present(alertController, animated: true, completion: nil)
+
+    
+    
+      
+    }
+    
+    
+     var CIFilterNames = [
         "CIPhotoEffectChrome",
         "CIPhotoEffectFade",
         "CIPhotoEffectInstant",

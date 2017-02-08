@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hOw-r1-fas">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hOw-r1-fas">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -122,7 +122,7 @@
             </objects>
             <point key="canvasLocation" x="352.80000000000001" y="35.532233883058474"/>
         </scene>
-        <!--Scroll View Controller-->
+        <!--changeFilter-->
         <scene sceneID="6bg-e2-YeG">
             <objects>
                 <viewController id="JvQ-yH-GM4" customClass="scrollViewController" customModule="daaend" customModuleProvider="target" sceneMemberID="viewController">
@@ -141,7 +141,7 @@
                                 <rect key="frame" x="0.0" y="106" width="375" height="389"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8kq-Km-B1R">
-                                <rect key="frame" x="0.0" y="503" width="375" height="80"/>
+                                <rect key="frame" x="0.0" y="535" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </scrollView>
                         </subviews>
@@ -155,6 +155,13 @@
                             <constraint firstItem="82S-pQ-mLY" firstAttribute="centerX" secondItem="IBp-ai-R4G" secondAttribute="centerX" id="vtk-ib-gAz"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="changeFilter" id="6L5-g9-F2h">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="u1Z-BA-JQO">
+                            <connections>
+                                <action selector="save:" destination="JvQ-yH-GM4" id="TRO-v1-iqU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="containerView" destination="fSl-a0-Mu8" id="fao-Kh-nFm"/>
                         <outlet property="filterScrollView" destination="8kq-Km-B1R" id="j6v-7D-c6o"/>

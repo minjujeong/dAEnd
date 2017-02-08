@@ -149,7 +149,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
             controller.assetto = PHArray[indexpath!.row]
             controller.imageBoo2 = imageArray[controller.index]
 //            controller.photosAsset = self.
-//            controller.assetCollection = self.assetCollection
+            controller.assetCollection = self.assetCollection2
 
         }
     }
